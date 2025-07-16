@@ -18,7 +18,7 @@ if user_input:
         st.warning("Please enter a valid 9-digit number.")
     else:
         # Look for rows where ID is a substring of user input
-        matches = df[df["ID"].astype(str).apply(lambda x: x in user_input)]
+        matches = df[df["id"].astype(str).apply(lambda x: x in user_input)]
         if not matches.empty:
             st.success("ID Found!")
             st.write(matches)
