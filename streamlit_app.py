@@ -9,10 +9,11 @@ except Exception as e:
     st.error(f"Failed to load data.csv: {e}")
     st.stop()
 
-st.title("User ID Lookup")
+st.title("חיפוש שם עפ ת.ז")
 user_input = st.text_input("Enter your 9-digit ID:")
 
 # Check input
+st.title("https://www.jgive.com/new/he/ils/charity-organizations/3508")
 if user_input:
     if len(user_input) != 9 or not user_input.isdigit():
         st.warning("Please enter a valid 9-digit number.")
